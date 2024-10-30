@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/alanr/Desktop/Nova%20pasta/kiddos/kiddos/courses.html -->
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Coding game</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--Injector do phaser-->
+<script src="js/phaser.min.js"></script>        
+<script src="js/phaser-arcade-physics.min.js"></script>        
+<!--Fim do Injector do phaser-->
+
+<script src="js/controladorLog.js"></script>
+
+<!-- Bootstrap core CSS -->
+  
+    		
+		<style type="text/css">
+			h1 {
+			    font-weight: normal;
+			    font-size: 130%;
+			}
+
+			.level_number {
+			    border: solid 1px #ddd;
+			    border-radius: 20px;
+			    padding: 6px 12px;
+			    color: #888;
+			}			
+			.level_actual { 
+			    background-color: #ddd;
+			    color: #000;
+			}
+			.level_correct { 
+			    background-color: lightgreen;
+			    color: #000;
+			}
+			.level_incorrect { 
+			    background-color: yellow;
+			    color: #000;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1><a id="title">Aprenda a codificar com este jogo. Estágio Asteroide:</a> &nbsp;  
+			<a class="level_number level_correct" id="level1" href="#">1</a> 
+			<a class="level_number level_correct" id="level2" href="#">2</a> 
+			<a class="level_number level_incorrect" id="level2" href="#">3</a> 
+			<a class="level_number level_actual" id="level2" href="#">4</a>
+			<a class="level_number " id="level2" href="#">5</a>
+			<a class="level_number " id="level2" href="#">6</a>
+			<a class="level_number " id="level2" href="#">7</a>
+			<a class="level_number " id="level2" href="#">8</a>
+			<a class="level_number " id="level2" href="#">9</a>
+			<a class="level_number " id="level2" href="#">10</a>
+		</h1>
+		<hr>
+		<h5>					Rode com o código que leva o jogador da posição inicial para a final:
+		</h5>
+		<table>
+			<tr>
+				<td>
+					<div>
+						<center>
+							<img src="img/Sokoban_ani.gif">
+							<BR><BR>
+							<button type="button" class="btn btn-success">Rodar código selecionado</button>
+						</center>
+					</div>
+				</td>
+				<td>
+					<div>
+						&nbsp;
+					</div>
+				</td>
+				<td>
+					<div>
+						<div id="accordion">
+						  <div class="card">
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Alternativa #1
+								</button>
+							  </h5>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							  <div class="card-body">
+											<img src="img/blockly.jfif">
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header" id="headingTwo">
+							  <h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  Alternativa #2
+								</button>
+							  </h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							  <div class="card-body">
+											<img src="img/blockly.jfif">
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header" id="headingTwo">
+							  <h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  Alternativa #3
+								</button>
+							  </h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							  <div class="card-body">
+											<img src="img/blockly.jfif">
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header" id="headingTwo">
+							  <h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  Alternativa #4
+								</button>
+							  </h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							  <div class="card-body">
+											<img src="img/blockly.jfif">
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

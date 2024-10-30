@@ -1,0 +1,26 @@
+{  
+	"objects": [
+ 		{ "id": "1", "name": "hero 1", "type": "colisor", "url": "play1.png"},
+		{ "id": "2", "name": "hero 2", "type": "colisor", "url": "play2.png"},
+		{ "id": "3", "name": "hero 3", "type": "colisor", "url": "play3.png"},
+		{ "id": "4", "name": "hero 4", "type": "colisor", "url": "play4.png"},
+		{ "id": "5", "name": "hero 5", "type": "colisor", "url": "play5.png"},
+ 		{ "id": "6", "name": "background 1", "type": "background", "url": "fun1.png"},
+		{ "id": "7", "name": "background 2", "type": "background", "url": "fun2.png"},
+		{ "id": "8", "name": "background 3", "type": "background", "url": "fun3.png"},
+		{ "id": "9", "name": "background 4", "type": "background", "url": "fun4.png"},
+		{ "id": "10", "name": "colisor 1", "type": "colisor", "url": "obs1.png"},
+ 		{ "id": "11", "name": "colisor 2", "type": "colisor", "url": "obs2.png"},
+		{ "id": "12", "name": "colisor 3", "type": "colisor", "url": "obs3.png"},
+		{ "id": "13", "name": "colisor 4", "type": "colisor", "url": "obs4.png"},
+		{ "id": "14", "name": "portal 1", "type": "colisor", "url": "por1.png"},
+		{ "id": "15", "name": "Grade 1", "type": "grade", "url": "gra1.png"},
+		{ "id": "16", "name": "Grade 2", "type": "grade", "url": "gra2.png"}
+	],
+	"behaviours": [
+ 		{ "id": "1", "name": "walk", "function" : "walkAct"},
+		{ "id": "2", "name": "playerWin", "function" : "winAct"},
+		{ "id": "3", "name": "playerLose", "function" : "loseAct"},
+ 		{ "id": "4", "name": "explode", "function" : "explodeAct"}
+	]
+}

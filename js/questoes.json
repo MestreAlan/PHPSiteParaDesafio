@@ -1,0 +1,62 @@
+{  
+	"questoes": [
+ 		{ "id": "1", "titulo": "Um evento é uma estrutura capaz de realizar ações específicas, como por exemplo, mover a nave. Neste problema, cada ação de movimentação é entendida como um evento separado. Quais conjuntos de eventos levam a nave até o portal? (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "1", "dificuldade" : "3"},
+		{ "id": "2", "titulo": "Eventos podem receber mais de uma instrução por vez. Neste exemplo o evento que movimenta a nave recebe dois parâmetros, sendo o primeiro a direção da movimentação e o segundo a quantidade de movimentos. Quais conjuntos de eventos levam a nave até o portal? (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "2", "dificuldade" : "4"},
+ 		{ "id": "3", "titulo": "Variável é um tipo de estrutura que é capaz de guardar diversos tipos de dados. Para o problema a seguir, avalie os valores que cada variável deve possuir para solucionar o problema dado. (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "3", "dificuldade" : "5"},
+		{ "id": "4", "titulo": "O uso de variáveis globais, ou seja, variáveis que estão visíveis por todas as estruturas do sistema, podem ser úteis em certos momentos, em especial, quando queremos que uma informação seja acessada e alterada dentro de funções. Nesta tarefa o evento mover recebe 3 parâmetros, variável atual com direção que a nave deverá se mover, quantidade de movimentos na direção indicada e direção que alterará a variável global de movimentação. Qual das alternativas levará a nave até o portal? (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "4", "dificuldade" : "6"},
+		{ "id": "5", "titulo": "Em programação, muitas vezes precisamos utilizar um conjunto de instruções repetidamente, como por exemplo, a função que move o personagem. Para reduzir a quantidade de códigos repetidos para uma mesma funcionalidade, estruturas como os laços devem ser usadas. Tudo que estiver dentro do laço será executado uma quantidade X de vezes, com o X sendo definido pela quantidade de repetições necessárias. Avalie as alternativas abaixo e encontre a que levará a nave até o portal. (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "5", "dificuldade" : "3"},
+		{ "id": "6", "titulo": "Além da estrutura 'para (for)', já trabalhada em questões anteriores, outra estrutura também é muito utiliada, o enquanto (while). Cada solução lógica pode ser implementada de diferentes formas, mas o 'for' é usualmente indicado quando se sabe quantas repetições serão executadas. Por sua vez, o 'while' é indicado para quantidades indeterminadas de repetições, definidas através de outras partes do código de forma dinâmica e não determinada. Analise as alternativas e seleciona a que leva corretamente a nave até o portal. (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "6", "dificuldade" : "4"},
+		{ "id": "7", "titulo": "Condicionais são estruturas que comparam dados, retornando saídas falsas ou verdadeiras para cada verificação. O 'se/faça (if/do)' é uma das mais usadas estruturas condicionais e só executa o código interno quando sua verificação retorna verdadeiro. Análise o uso do if nas alternativas abaixo e seleciona a que leva a nave até o portal corretamente. (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "7", "dificuldade" : "3"},
+		{ "id": "8", "titulo": "As estruturas condicionais possuem funcionalidades especiais para tratamentos pós verificação das saídas falsas. Esse tratamento ocorre quando se adiciona após o 'faça' o 'se não'. Assim, qual das alternativas levam a nave corretamente até o portal? (obs: Em caso do sistemas travar, volte para a tela inicial e aperte F5, em seguida troque de usuário)", "tipo" : "8", "dificuldade" : "4"}
+	],
+	"question2": [
+		{
+			"id": "1",
+			"etapa": "1",
+			"backgroundRefCatalogo": "2",
+			"enunciado": "Utilize seus conhecimentos de lógica para mover a nave até o portal",
+			"playerPosiX": "2",
+			"playerPosiy": "5",
+			"portalPosiX": "4",
+			"portalPosiy": "8",
+			"meteoros": [
+				{
+					"posiX": "1",
+					"PosiY": "1",
+					"refCatalogo": "4"
+				},
+				{
+					"posiX": "29",
+					"PosiY": "27",
+					"refCatalogo": "4"
+				}
+			],
+			"aternativas": [
+				{
+					"texto": "direita,direita,baixo,baixo,baixo",
+					"movimento": "direita,direita,baixo,baixo,baixo"
+				},
+				{
+					"texto": "direita,baixo,baixo,baixo,esquerda",
+					"movimento": "direita,baixo,baixo,baixo,esquerda"
+				},
+				{
+					"texto": "cima,direita,direita, baixo,baixo",
+					"movimento": "cima,direita,direita, baixo,baixo"
+				},
+				{
+					"texto": "esquerda, esquerda,baixo,baixo,baixo",
+					"movimento": "esquerda, esquerda,baixo,baixo,baixo"
+				},
+				{
+					"texto": "esquerda,esquerda,cima,cima,cima",
+					"movimento": "esquerda,esquerda,cima,cima,cima"
+				},
+				{
+					"texto": "cima,cima,cima,esquerda,esquerda",
+					"movimento": "cima,cima,cima,esquerda,esquerda"
+				}
+			]
+		}
+	]
+}

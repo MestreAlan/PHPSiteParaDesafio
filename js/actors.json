@@ -1,0 +1,12 @@
+{  
+	"actors": [
+ 		{ "id": "1", "name": "Player", "objectId" : "1", "cellX" : "4", "cellY" : "8"},
+ 		{ "id": "2", "name": "background1", "objectId" : "2", "cellX" : "3", "cellY" : "3"},
+ 		{ "id": "3", "name": "meteor1", "objectId" : "4", "cellX" : "4", "cellY" : "5"},
+		{ "id": "4", "name": "meteor2", "objectId" : "5", "cellX" : "4", "cellY" : "5"},
+		{ "id": "5", "name": "portal1", "objectId" : "6", "cellX" : "4", "cellY" : "5"},
+		{ "id": "6", "name": "grade1", "objectId" : "7", "cellX" : "4", "cellY" : "5"}
+	],
+	"rules": [
+	]
+}

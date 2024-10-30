@@ -1,0 +1,30 @@
+<div id="canvas_phaser" style="width: 100%; height: 100%">
+	<canvas></canvas>                            
+</div>
+
+<script>
+  var actors_map;
+  var objects_catalog;
+
+  console.log('1');
+  $.getJSON('js/actors.json', function(data) {         
+	  actors_map = data;
+  });
+  $.getJSON('js/catalog.json', function(data) {         
+	objects_catalog = data;
+	startGame();
+  });
+
+
+  // Starts the game only after loading the JSON files
+  function startGame() {
+	console.log('DUVIDA << start game')
+	startPhaserEnvironment();
+  }
+
+  function stopGame() {
+	  stopPhaserEnvironment();
+  }
+</script>
+<!-- script for the phaser game -->
+<script type="text/javascript" src="js/phaser-code-duvida.js"></script>
